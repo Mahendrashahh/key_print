@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #222;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        #main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+
+            color: white;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 20rem;
+            font-weight: 800;
+            letter-spacing: -1rem;
+            user-select: none;
+        }
+
+        @media (max-width: 786px) {
+            h1 {
+                font-size: 12rem;
+                letter-spacing: -0.5rem;
+            }
+
+
+            #main {
+               height: 70vh;
+        width: 100vw;
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 0px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+            
+
+            h1 {
+                font-size: 7rem;
+                letter-spacing: -0.2rem;
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="main">
+
+        <h1>w</h1>
+
+        <script>
+            let h1 = document.querySelector("h1");
+            window.addEventListener("keydown", function (dets) {
+                if (dets.key === " ") {
+                    h1.textContent = "SPC";
+
+                }
+                else {
+                    h1.textContent = dets.key;
+                }
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>
